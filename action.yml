@@ -20,6 +20,6 @@ runs:
     - name: Create orb
       shell: bash
       run: |-
-        pip install --root-user-action=ignore pyorbs
+        pip install --upgrade --root-user-action=ignore pyorbs
         orb --make ${{ inputs.name }} --reqs ${{ inputs.requirements }}
         orb --glow ${{ inputs.name }}
