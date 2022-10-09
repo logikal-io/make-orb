@@ -18,6 +18,7 @@ runs:
   using: composite
   steps:
     - name: Create orb
+      shell: bash
       run: |-
         pip install --root-user-action=ignore pyorbs
         orb --make ${{ inputs.name }} --reqs ${{ inputs.requirements }}
