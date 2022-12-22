@@ -6,7 +6,7 @@ Usage
 -----
 ```yaml
 steps:
-  - uses: logikal-io/make-orb@{release}
+  - uses: logikal-io/make-orb@v1
 ```
 
 Inputs
