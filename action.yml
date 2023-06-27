@@ -13,12 +13,17 @@ inputs:
     description: The path to the requirements file
     required: false
     default: requirements.txt
+  working-directory:
+    description: The working directory to use
+    required: false
+    default: null
 
 runs:
   using: composite
   steps:
     - name: Create orb
       shell: bash
+      working-directory: ${{ inputs.working-directory }}
       run: |-
         pip install --upgrade pyorbs~=2.0
         orb --make ${{ inputs.name }} --requirements ${{ inputs.requirements }}

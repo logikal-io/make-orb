@@ -15,6 +15,8 @@ Inputs
 
 `requirements`: Optional, the path to the requirements file. Defaults to `requirements.txt`.
 
+`working-directory`: Optional, the working directory to use. Defaults to the current directory.
+
 License
 -------
 This GitHub Action is licensed under the MIT open source license.
