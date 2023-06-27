@@ -16,7 +16,7 @@ inputs:
   working-directory:
     description: The working directory to use
     required: false
-    description: null
+    default: null
 
 runs:
   using: composite
