@@ -1,0 +1,11 @@
+name: Update floating tag
+on:
+  release:
+    types: [released]
+
+jobs:
+  update-floating-tag:
+    name: Update floating tag
+    uses: logikal-io/github-workflows/.github/workflows/update-floating-tag.yml@v5
+    permissions:
+      contents: write
